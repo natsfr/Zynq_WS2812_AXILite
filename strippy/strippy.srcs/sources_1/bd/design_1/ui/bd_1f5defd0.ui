@@ -1,0 +1,25 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 250 -defaultsOSRD
+preplace port led_out -pg 1 -y -30 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 270 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst AXIWS2812Strip_0 -pg 1 -lvl 1 -y -210 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 340 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 2 NJ 250 NJ
+preplace netloc AXIWS2812Strip_0_led_out 1 1 3 NJ -210 NJ -210 930
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 0 4 -160 -10 NJ -10 NJ -10 930
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 620
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 70 40 590
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 3 -140 -140 NJ -140 630
+preplace netloc processing_system7_0_FIXED_IO 1 2 2 NJ 270 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 1 600
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -150 20 60 20 610
+levelinfo -pg 1 -180 -40 400 780 950 -top -300 -bot 480
+",
+}
+{
+   da_axi4_cnt: "6",
+}

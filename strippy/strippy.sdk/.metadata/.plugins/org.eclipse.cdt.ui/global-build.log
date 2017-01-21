@@ -1,0 +1,77 @@
+14:56:28 **** Incremental Build of configuration Debug for project test_ws2812_IP ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Rien à faire pour « main-build ».
+
+14:56:29 Build Finished (took 194ms)
+
+14:56:29 **** Incremental Build of configuration Release for project test_ws2812_IP ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_ws2812_IP_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:5: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+     AXIWS2812STRIP_mWriteReg(XPAR_AXIWS2812STRIP_0_S00_AXI_BASEADDR, AXIWS2812STRIP_S00_AXI_SLV_REG0_OFFSET, 4); // write = 0 | display = 0 | reset = 1
+     ^
+../src/helloworld.c:74:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      status = AXIWS2812STRIP_mReadReg(XPAR_AXIWS2812STRIP_0_S00_AXI_BASEADDR, AXIWS2812STRIP_S00_AXI_SLV_REG0_OFFSET);
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_ws2812_IP.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_ws2812_IP_bsp/ps7_cortexa9_0/lib -o "test_ws2812_IP.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_ws2812_IP.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_ws2812_IP.elf  |tee "test_ws2812_IP.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22796	   1152	  22580	  46528	   b5c0	test_ws2812_IP.elf
+'Finished building: test_ws2812_IP.elf.size'
+' '
+14:56:32 **** Incremental Build of configuration Debug for project test_ws2812_IP ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Rien à faire pour « main-build ».
+17:24:14 **** Incremental Build of configuration Debug for project test_ws2812_IP ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Rien à faire pour « main-build ».
+17:40:52 **** Auto Build of configuration Debug for project test_ws2812_IP ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_ws2812_IP_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:5: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+     AXIWS2812STRIP_mWriteReg(XPAR_AXIWS2812STRIP_0_S00_AXI_BASEADDR, AXIWS2812STRIP_S00_AXI_SLV_REG0_OFFSET, 4); // write = 0 | display = 0 | reset = 1
+     ^
+../src/helloworld.c:74:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+      status = AXIWS2812STRIP_mReadReg(XPAR_AXIWS2812STRIP_0_S00_AXI_BASEADDR, AXIWS2812STRIP_S00_AXI_SLV_REG0_OFFSET);
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_ws2812_IP.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_ws2812_IP_bsp/ps7_cortexa9_0/lib -o "test_ws2812_IP.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_ws2812_IP.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_ws2812_IP.elf  |tee "test_ws2812_IP.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22960	   1152	  22580	  46692	   b664	test_ws2812_IP.elf
+'Finished building: test_ws2812_IP.elf.size'
+' '
+17:41:02 **** Incremental Build of configuration Debug for project test_ws2812_IP ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Rien à faire pour « main-build ».

@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER AXIWS2812Strip
+	OPTION supported_peripherals = (AXIWS2812Strip);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = AXIWS2812Strip;
+END DRIVER
